@@ -94,11 +94,12 @@ export default function Hero({ dark }) {
               Contact Me
             </button>
 
-            {/* To enable CV download: place your PDF in the public/ folder as "LimashiCV.pdf"
-                then change href="#" to href="/LimashiCV.pdf" and remove onClick */}
+            {/* ✅ CV Download Button — make sure LimashiCV.pdf is inside the public/ folder */}
             <a
-              href="#"
-              onClick={e => e.preventDefault()}
+              href="/LimashiCV.pdf"
+              download="Limashi_Sathkumara_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`border font-medium px-5 py-3 rounded-xl flex items-center gap-2 transition-all hover:-translate-y-0.5 ${
                 dark
                   ? 'border-white/15 text-white/80 hover:border-teal hover:text-teal'
